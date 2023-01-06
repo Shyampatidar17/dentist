@@ -1,0 +1,1233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+}
+
+/* -------------------------Top-nav---------------- */
+.top-nav {
+  width: 100vw;
+  margin: auto;
+  background-color: #0d374c;
+  padding: 15px 0;
+}
+
+.topnav-row {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav-col {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.topnav-col a i {
+  color: #ffffff;
+  margin-right: 8px;
+  font-size: 14px;
+}
+.topnav-col i {
+  color: #ffffff;
+  margin-right: 8px;
+  font-size: 14px;
+}
+.topnav-col .topnav-phone {
+  margin-right: 30px;
+}
+.topnav-col .topnav-icon i {
+  margin-left: 20px;
+}
+.topnav-col span {
+  font-size: 14px;
+}
+@media (max-width: 1120px) {
+  .topnav-row {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .top-nav {
+    display: none;
+  }
+}
+
+/* ----------------------Menu-bar---------------------*/
+
+.menu-bar {
+  width: 100vw;
+  margin: auto;
+  background-color: #13455e;
+  padding: 40px 0;
+}
+
+.menubar-row {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubar-col-1 ul {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.menubar-col-1 ul li {
+  list-style: none;
+  margin-left: 18px;
+}
+
+.menubar-col-1 ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.7s;
+}
+.menubar-col-1 ul li a:hover {
+  color: #2ea6de;
+}
+.menubar-col-1 ul li a:active {
+  color: #2ea6de;
+}
+.menubar-row .menu-icon {
+  border: none;
+  background-color: #13455e;
+  color: #ffffff;
+  font-size: 16px;
+  display: none;
+}
+.menubar-row .close-menu {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .menubar-row {
+    width: 86vw;
+  }
+}
+@media (max-width: 1000px) {
+  .menubar-row .menu-icon {
+    display: block;
+  }
+  .menubar-mobile .close-menu {
+    display: block;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .menubar-col-1 ul {
+    display: none;
+  }
+
+  .menubar-mobile ul {
+    padding-top: 80px;
+    background-color: #000000;
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 45vw;
+    z-index: 999;
+    padding-bottom: 400px;
+  }
+
+  .menubar-mobile ul li {
+    list-style: none;
+    padding: 15px 0;
+    margin-left: -32px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+    padding-left: 22px;
+  }
+  .menubar-mobile ul li a {
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.7s;
+  }
+
+  .menubar-mobile ul li a:hover {
+    color: #2ea6de;
+  }
+  .menubar-mobile ul li a:active {
+    color: #2ea6de;
+  }
+}
+
+@media (max-width: 750px) {
+  .menubar-mobile ul {
+    width: 55vw;
+  }
+}
+@media (max-width: 550px) {
+  .menubar-mobile ul {
+    width: 65vw;
+  }
+}
+@media (max-width: 450px) {
+  .menubar-mobile ul {
+    width: 75vw;
+  }
+}
+
+/* --------------------Drop-down------------------------ */
+
+.menubar-col-1 .drop-icon {
+  border: none;
+  background-color: #13455e;
+  color: #ffffff;
+  margin-left: 1px;
+  font-weight: 600;
+}
+.menubar-col-1 .drop-link {
+  position: relative;
+  position: absolute;
+  top: 159px;
+  z-index: 9999;
+  background-color: #ffffff;
+  border-top: 3px solid #2ea6d8;
+}
+.menubar-col-1 .drop-link li {
+  padding: 13px 30px;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 0px;
+}
+.menubar-col-1 .drop-link li a {
+  color: #242424;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .menubar-mobile .drop-icon {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: 1px;
+    font-weight: 600;
+  }
+
+  .menubar-mobile .drop-link li {
+    padding: 8px 15px;
+    border: none;
+    margin-left: 0px;
+  }
+  .menubar-mobile .drop-link li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+/* -----------------------Home---------------------------- */
+
+.carousel-item img {
+  height: 75vh;
+}
+/* --------------- */
+
+.snc {
+  width: 100vw;
+  background-color: #dfeef1;
+  margin: auto;
+  padding: 100px 0;
+}
+.snc-row {
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.snc-col img {
+  width: 44vw;
+  margin-left: 30px;
+}
+.snc-col h1 {
+  color: #130947;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.snc-col p {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+  .snc-row {
+    width: 92vw;
+  }
+}
+@media (max-width: 1160px) {
+  .snc-col p {
+    font-size: 15px;
+  }
+  .snc-col h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .snc-row {
+    width: 85vw;
+    flex-direction: column;
+  }
+  .snc-col h1 {
+    font-size: 30px;
+  }
+  .snc-col img {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .snc-col img {
+    width: 85vw;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .snc-col h1 {
+    font-size: 25px;
+  }
+}
+
+/* --------------------- */
+.mission {
+  width: 100vw;
+  margin: auto;
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+  padding: 100px 0;
+}
+.mission-row {
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.mission-col img {
+  width: 44vw;
+}
+.mission-col h1 {
+  color: #130947;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.mission-col ul li {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.mission-col li {
+  list-style: none;
+}
+.mission-col li::before {
+  content: "\2022";
+  color: #0053f9;
+  font-weight: bolder;
+  font-size: 25px;
+  display: inline-block;
+  width: 1.5em;
+}
+
+@media (max-width: 1250px) {
+  .mission-row {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 1160px) {
+  .mission-col li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mission-row {
+    width: 85vw;
+    flex-direction: column;
+  }
+  .mission-col h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .mission-col img {
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+  .mission-col img {
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mission-col h1 {
+    font-size: 25px;
+  }
+  .mission-col li {
+    font-size: 14px;
+  }
+  .mission-col li::before {
+    content: "\2022";
+    color: #0053f9;
+    font-weight: bolder;
+    font-size: 18px;
+    display: inline-block;
+    width: 1em;
+  }
+}
+
+@media (max-width: 430px) {
+  .mission-col li {
+    font-size: 12px;
+  }
+  .mission-col li::before {
+    content: "\2022";
+    color: #0053f9;
+    font-weight: bolder;
+    font-size: 18px;
+    display: inline-block;
+    width: 0.6em;
+  }
+}
+
+/* ------------------- */
+
+.service {
+  width: 100vw;
+  margin: auto;
+  background-color: #dfeef1;
+  padding: 90px 0;
+}
+
+.service-row {
+  width: 60vw;
+  margin: auto;
+}
+.service-col h1 {
+  color: #130947;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.service-col p {
+  font-size: 18px;
+  color: #6d7a8c;
+  margin-bottom: 20px;
+}
+.ulc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ulc-col div {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ulc-col i {
+  color: #2ea6de;
+  margin-right: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #ffffff;
+}
+.ulc-col span {
+  color: #130947;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .service-row {
+    width: 80vw;
+    margin: auto;
+  }
+  .service-col h1 {
+    font-size: 30px;
+  }
+  .ulc-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .service-col h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .ulc-col div {
+    align-items: flex-start;
+  }
+  .service-col p {
+    font-size: 16px;
+  }
+  .ulc-col span {
+    font-size: 14px;
+  }
+}
+
+/* --------------- */
+.appoint {
+  width: 100vw;
+
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+}
+.appoint-row {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appoint-col {
+  padding: 0px 50px;
+}
+.appoint-col-1 {
+  padding: 0;
+}
+.appoint-col img {
+  /* width: 650px; */
+  width: 50vw;
+  height: 500px;
+}
+
+.appoint-col h1 {
+  font-size: 40px;
+  color: #130947;
+  margin-bottom: 40px;
+}
+.appoint-col p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4f87fb;
+}
+
+.appoint-col .row {
+  margin-bottom: 30px;
+}
+
+.appoint-col .send-msg button {
+  margin-top: 40px;
+  padding: 10px 30px;
+  border: none;
+  border: 2px solid #2ea6de;
+  border-radius: 5px;
+  color: #2ea6de;
+  font-size: 14px;
+  font-weight: 600;
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+  transition: all 1s;
+}
+.appoint-col .send-msg button:hover {
+  background-color: #2ea6de;
+  color: #ffffff;
+}
+.appoint-col .img-cont {
+  background-color: #13455e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+.appoint-col .img-cont i {
+  font-size: 30px;
+  color: #2ea6d8;
+  margin-left: 10px;
+  padding: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.appoint-col .img-cont div {
+  margin-left: 15px;
+}
+.appoint-col .img-cont p {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.appoint-col .img-cont h1 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 1000px) {
+  .appoint-row {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .appoint-col {
+    width: 85vw;
+    margin: auto;
+  }
+  .appoint-col img {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 50px;
+  }
+  .appoint-col h1 {
+    font-size: 35px;
+  }
+  .appoint-col {
+    padding: 0px 0px;
+  }
+  .appoint-col-1 {
+    width: 100vw;
+    margin: auto;
+  }
+}
+
+.appoint-col .form-floating textarea{
+  height: 100px;
+}
+@media (max-width: 730px) {
+  .appoint-col h1 {
+    font-size: 25px;
+  }
+  .appoint-col .row {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .appoint-col .row input {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .appoint-col .img-cont h1 {
+    font-size: 25px;
+  }
+}
+
+/* ----------------Footer--------------- */
+.footer {
+  width: 100vw;
+  margin: auto;
+  background-color: rgba(40, 48, 63);
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+  padding: 50px 0;
+}
+.footer-row {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-col {
+  flex-basis: 30%;
+}
+
+.footer-col h4 {
+  color: #2ea6d8;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #2ea6d8;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  width: 140px;
+}
+.footer-col p {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 2px;
+  line-height: 22px;
+}
+.contact-detail {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-icon a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #2ea6d8;
+  margin-right: 20px;
+}
+.footer-col iframe {
+  width: 31vw;
+  height: 370px;
+  margin: auto;
+}
+
+@media (max-width: 1150px) {
+  .footer-col {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-row {
+    width: 80vw;
+    margin: auto;
+    flex-direction: column;
+  }
+  .footer-col {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+  .footer-col iframe {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+.policy {
+  width: 100vw;
+  margin: auto;
+  background-color: rgba(40, 48, 63);
+  padding: 25px 5px;
+  border-top: 1px solid rgb(80, 80, 80);
+}
+
+.policy-row {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+}
+
+.policy-col p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.policy-col a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffff00;
+}
+.policy-col i {
+  color: #ea5353;
+}
+
+@media (max-width: 1000px) {
+  .policy-row {
+    width: 80vw;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .policy-col p {
+    margin-bottom: 1px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+/* ---------------------Header image for all------------------- */
+.dr-header {
+  width: 100vw;
+  margin: auto;
+  height: 55vh;
+  background-image: url("https://dentiq-demo.pbminfotech.com/demo1/wp-content/uploads/sites/2/2019/07/dentist-title-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+.header-contant {
+  width: 87vw;
+  margin: auto;
+  padding-top: 120px;
+}
+.header-contant h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #130947;
+}
+.header-contant p {
+  font-size: 14px;
+  color: #130947;
+  font-weight: 500;
+}
+@media (max-width: 650px) {
+  .header-contant {
+    padding-top: 140px;
+  }
+  .header-contant h1 {
+    font-size: 30px;
+  }
+}
+
+/* -----------------------Doctor----------------------------- */
+.doctor {
+  width: 85vw;
+  margin: auto;
+}
+
+.doctor-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.doctor-col-1 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.doctor-col-1 img {
+  width: 18vw;
+  margin-bottom: 30px;
+}
+.doctor-col-1 .doc-content {
+  width: 25vw;
+  margin: auto;
+  padding: 0 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.doctor-col-1 h1 {
+  font-size: 24px;
+  color: #130947;
+  margin-bottom: 10px;
+}
+.doctor-col-1 h6 {
+  font-size: 16px;
+  color: #2ea6d8;
+  margin-bottom: 30px;
+}
+.doctor-col-1 p {
+  color: #000000;
+  font-size: 16px;
+  padding-bottom: 30px;
+  line-height: 25px;
+  font-weight: 300;
+}
+.doctor-col-1 h3 {
+  font-size: 22px;
+  color: #2ea6d8;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.doctor-col-1 .skill h3 {
+  font-size: 22px;
+  color: #2ea6d8;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.doctor-col-1 .skill {
+  margin-bottom: 30px;
+}
+.rang-slide input::-webkit-slider-thumb{
+
+border: 2px solid rgb(9,205,240);
+background-color: #ffffff;
+}
+
+.doctor-col-1 label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.doctor-col-1 input {
+  color: #2ea6d8;
+  margin-bottom: 15px;
+}
+.doctor-col-2 {
+  margin-left: 50px;
+}
+.doctor-col-2 ol li {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.doctor-col-2 ul {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  list-style-type: disc;
+}
+.doctor-col-2 ul li {
+  margin-bottom: 2px;
+}
+
+@media (max-width: 1000px) {
+  .doctor {
+    width: 80vw;
+    margin: auto;
+  }
+  .doctor-row {
+    flex-direction: column;
+  }
+
+  .doctor-col-1 {
+    width: 80vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .doctor-col-1 .doc-content {
+    width: 80vw;
+    margin: auto;
+    padding: 0 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .doctor-col-1 img {
+    width: 35vw;
+  }
+  .doctor-col-2 {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+
+/* ----------------Dental treatment in diabetes------------ */
+
+.diab-cont {
+  width: 80vw;
+  margin: auto;
+}
+.diab-cont p {
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.diab-cont i {
+  font-weight: 600;
+}
+
+.diabetic {
+  width: 80vw;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.diabetic h1 {
+  font-size: 30px;
+  color: #130947;
+}
+.diabetic-row {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.diabetic .diabetic-col {
+  display: flex;
+  align-items: flex-start;
+}
+
+.diabetic .diabetic-col i {
+  margin-right: 15px;
+  margin-top: 4px;
+  font-size: 20px;
+  color: #2ea6d8;
+}
+
+.diabetic .diabetic-col p {
+  color: #000000;
+  font-size: 15px;
+}
+
+.diabetic p em {
+  font-weight: 600;
+}
+
+/* ------------------------Root canal------------------- */
+
+.what-rtc {
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 80px;
+}
+.what-rtc h1 {
+  font-size: 22px;
+  color: #130947;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.what-rtc p {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.what-rtc ul {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.what-rtc ul li {
+  color: #000000;
+  font-weight: 15px;
+}
+
+.what-rtc h6{
+  font-size: 18px;
+  color: #130947;
+  margin: 25px 0;
+}
+
+.accordion-button{
+color: #000000;
+font-size: 16px;
+}
+@media (max-width:510px){
+  .accordion-button{
+    font-size: 14px;
+    }
+}
+
+/* -----------------------teledentistry------------------ */
+
+.teledent{
+  width: 80vw;
+  margin: auto;
+}
+.teledent p{
+  font-size: 15px;
+  color: #000000;
+}
+
+.teledent ol{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.teledent ol li{
+  margin-top: 3px;
+}
+
+.tele-bottom{
+  width: 80vw;
+  margin: auto;
+}
+.tele-bottom h6{
+text-decoration: underline;
+font-weight: 600;
+font-size: 16px;
+}
+.tele-bottom ol{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+
+
+.tele-cont{
+  width: 100vw;
+
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+ padding: 70px 0;
+}
+.tele-cont-row{
+  width: 80vw;
+  margin: auto;
+}
+
+.tele-cont-row h1 {
+  font-size: 40px;
+  color: #130947;
+  margin-bottom: 40px;
+}
+
+.tele-cont-row .row {
+  margin-bottom: 30px;
+}
+
+.tele-cont-row .send-msg button {
+  margin-top: 40px;
+  padding: 10px 30px;
+  border: none;
+  border: 2px solid #2ea6de;
+  border-radius: 5px;
+  color: #2ea6de;
+  font-size: 14px;
+  font-weight: 600;
+  background-image: url("https://dentiq-demo.pbminfotech.com/datasite/wp-content/uploads/sites/6/2019/07/pattern-1.png?id=11062");
+  transition: all 1s;
+}
+.tele-cont-row .send-msg button:hover {
+  background-color: #2ea6de;
+  color: #ffffff;
+}
+.tele-cont-row .form-floating textarea{
+  height: 140px;
+}
+@media (max-width: 550px) {
+  .tele-cont-row .row {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .tele-cont-row .row input {
+    margin-bottom: 30px;
+  }
+}
+
+
+/* ----------------Contact us------------------ */
+
+.contact{
+  width: 80vw;
+  margin: auto;
+  margin-top: -30px;
+}
+
+.contact-row{
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-col h2{
+  font-size: 26px;
+  color: #130947;
+  margin-bottom: 10px;
+}
+
+.contact-col-l{
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+.con-bor{
+  border-style: none  none dashed none;
+  border-width: thin;
+  border-color: #c9c9c9;
+}
+
+.contact-col-l i{
+  font-size: 30px;
+  color:  #20c7f5;
+  padding-right: 20px;
+}
+.contact-cont{
+  margin-left: 8px;
+}
+.contact-col-l h5{
+  font-size: 20px;
+  color: #130947;
+  margin-bottom: 10px;
+}
+
+.contact-col-l p{
+  font-size: 14px;
+  color: #000000;
+}
+
+.contact-col-r{
+  width: 80vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+  padding-bottom: 80px;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 99999;
+  top: -100px;
+  margin-left: 50px;
+}
+
+.contact-col-r p{
+font-size: 13px;
+color: #4f87fb;
+font-weight: 600;
+}
+.contact-col-r h1 {
+   font-size: 40px;
+    color: #130947;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+.contact-col-r input{
+  margin-bottom: 30px;
+  background-color: #ecf1f8;
+  border: none;
+  height: 50px;
+}
+.contact-col-r .form-floating textarea{
+  height: 100px;
+  background-color: #ecf1f8;
+  border: none;
+}
+.contact-col-r button{
+  margin-top: 20px;
+  border: none;
+  background-color: #13455e;
+  color: #ffffff;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button[disabled]{
+  background-color: #45545b;
+}
+
+.contact-col-r .contact-recaptch{
+ margin-top: 20px;
+}
+
+@media (max-width:1200px) {
+  .contact{
+    width: 90vw;
+  }
+  .contact-col-r h1 {
+    font-size: 35px;
+ }
+}
+@media (max-width:1000px) {
+  .contact{
+    width: 95vw;
+  }
+  .contact-col-r h1 {
+    font-size: 30px;
+ }
+}
+@media (max-width: 900px) {
+  .contact{
+    width: 80vw;
+  }
+  .contact-row{
+   flex-direction: column;
+  }
+  .contact-col-r{
+    top: 0px;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+}
+@media (max-width: 750px) {
+  .contact-col-r h1 {
+    font-size: 25px;
+ }
+}
+
+@media (max-width:600px) {
+  .contact-row .row {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .contact-row .row input {
+    margin-bottom: 30px;
+  }
+}
+
+.contact-img img{
+  margin-top: -98px;
+  width: 100vw;
+  height: 65vh;
+}
+
+@media (max-width:900px) {
+  .contact-img img{
+    margin-top: -78px;
+  }
+}
